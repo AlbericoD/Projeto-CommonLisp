@@ -12,10 +12,12 @@
 
 (format t "Media Alunos~%~%")
 
-(defun n1 (nota_prova n2 n3 n4)
-   (/ ( + n1 n2 n3 n4) 4)
-)
-(defun calc_projetos(p1 p2 p3 p4)
+    (defun calcProjetos(p1 p2 p3 p4) "Calculo projetos."
+        (* (/ (+ p1 p2 p3 p4) 4) 0.3)
+    )   ;; Teste com valores falsos
+        (write(calcProjetos 25 25 25 25))
 
-)
-    ;;(write(averagenum 10 20 30 40))
+    (defun calcN1(notaProva notaProjeto notaArtigo notaIntegrador) "Calculo N1 (50%)."
+        (+ notaProva notaProjeto notaArtigo notaIntegrador)
+    )   ;; Teste com valores falsos
+        (write(calcN1 3 3 3 1))    
