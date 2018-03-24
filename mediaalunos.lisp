@@ -21,7 +21,7 @@
 
     
 
-    (defun calcN1(notaProva notaProjeto notaArtigo notaIntegrador) "Calculo N1 (50%)."
-        (* (+ notaProva notaProjeto notaArtigo notaIntegrador) 0.5)
+    (defun calcMedia(notaN1, notaN2, notaN3) "Calculo N1 (50%)."
+        (+ (* notaN1 0.5) (* notaN2 0.3) (* notaN3 0.2))        
     )   ;; Teste com valores falsos
-        (write(calcN1 3 3 3 1))    
+        (write(calcMedia 10, 5, 3))    
